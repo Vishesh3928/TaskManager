@@ -13,8 +13,8 @@ A full-stack task management application that allows users to create, manage, an
 
 ## Live Demo
 
-- Frontend: [View Live Application](https://task-manager-tp4x.vercel.app/)
-- Backend API: [API Endpoint](https://taskmanager-cicm.onrender.com)
+- Frontend: [View Live Application](https://task-manager-tp4x.vercel.app/)  [Hosted on render]
+- Backend API: [API Endpoint](https://taskmanager-cicm.onrender.com) [Hosted on Vercel]
 
 ## API Endpoints
 
@@ -37,6 +37,7 @@ A full-stack task management application that allows users to create, manage, an
 - MongoDB Atlas
 - JSON Web Tokens (JWT)
 - Bcrypt for password hashing
+- Database: MongoDB Atlas
 
 ### Frontend
 - React (Vite)
@@ -54,11 +55,6 @@ A full-stack task management application that allows users to create, manage, an
 -validator
 -axios
 -react-router-dom  
-
-### Deployment
-- Frontend: Vercel
-- Backend: Render
-- Database: MongoDB Atlas
 
 ### Installation
 
@@ -127,7 +123,9 @@ TaskManager/
   - Description
 - Optional fields:
   - Due Date
+  - Status
 - Default values:
+  - Due Date : null    
   - Status: "Pending"
 - All fields can be updated after creation
 
