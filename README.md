@@ -13,8 +13,8 @@ A full-stack task management application that allows users to create, manage, an
 
 ## Live Demo
 
-- Frontend: [View Live Application](https://task-manager-tp4x.vercel.app/)  [Hosted on render]
-- Backend API: [API Endpoint](https://taskmanager-cicm.onrender.com) [Hosted on Vercel]
+- Frontend: [View Live Application](https://task-manager-tp4x.vercel.app/)  [Hosted on vercel]
+- Backend API: [API Endpoint](https://taskmanager-cicm.onrender.com) [Hosted on render]
 
 ## API Endpoints
 
