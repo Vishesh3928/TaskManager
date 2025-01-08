@@ -18,7 +18,7 @@ const Dashboard = ({ setToken }) => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/tasks/get-tasks',{
+        const response = await axios.get('https://taskmanager-cicm.onrender.com/tasks/get-tasks',{
             headers: {
               Authorization: `Bearer ${token}`, 
             },
@@ -36,7 +36,7 @@ const Dashboard = ({ setToken }) => {
     e.preventDefault();
     try {
       const newTask = { title, description, dueDate, status };
-      const response = await axios.post('http://localhost:5000/tasks/create-task', newTask,{
+      const response = await axios.post('https://taskmanager-cicm.onrender.com/tasks/create-task', newTask,{
         headers: {
           Authorization: `Bearer ${token}`, 
         },
@@ -55,7 +55,7 @@ const Dashboard = ({ setToken }) => {
     e.preventDefault();
     try {
       const updatedTask = { title, description, dueDate, status };
-      const response = await axios.patch(`http://localhost:5000/tasks/edit/${editingTaskId}`, updatedTask,{
+      const response = await axios.patch(`https://taskmanager-cicm.onrender.com/tasks/edit/${editingTaskId}`, updatedTask,{
         headers: {
           Authorization: `Bearer ${token}`, 
         },
@@ -73,7 +73,7 @@ const Dashboard = ({ setToken }) => {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      await axios.delete(`http://localhost:5000/tasks/delete/${taskId}`,{
+      await axios.delete(`https://taskmanager-cicm.onrender.com/tasks/delete/${taskId}`,{
         headers: {
           Authorization: `Bearer ${token}`, 
         },
