@@ -45,7 +45,7 @@ export const loginController = async (req, res) => {
     if (!email || !password) {
       return res.status(400).json({ success: false, message: "Email and password are required" });
     }
-    const user = await userModel.findOne({ email }).select("+password");
+    const user = await userModel.findOne({ email: email.toLowerCase() }).select("+password");
     if (!user) {
       return res.status(400).json({ success: false, message: "Invalid username or password" });
     }
